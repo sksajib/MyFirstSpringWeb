@@ -1,0 +1,7 @@
+how does web work?
+A:Browser sends a request 
+	HttpRequest
+B:Server handles the request
+	Your Spring Boot Web Application
+C: Server returns the response
+	HttpResponse

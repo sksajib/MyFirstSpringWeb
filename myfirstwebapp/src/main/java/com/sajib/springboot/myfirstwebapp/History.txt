@@ -1,0 +1,39 @@
+Peek into History:
+
+Model 1 Arch.
+All Code in views(Jsps,....)
+	View logic
+	Flow Logic
+	Queries to databases
+Disadvantages:
+	very complex JSPs
+	Zero separation of concerns
+	Difficult to maintain
+	
+Model 2 Arch..
+How about separating concerns?
+	Model:data to generate the view
+	View:Show information to user
+	Controller:Controls the flow
+Advantage: Simpler to maintain
+Concern:
+	Where to implement common features to all controllers?
+	
+	
+Model 2 Arch- Front controller
+Concept:all request flow into a central controller.
+	Called as Front Controller
+Front Controller controls flow to Controller's and Views's
+	common features can be implemented in the Front controller.
+	
+Spring MVC Front controller- dispatcher Servlet
+A:Receives HTTP Request.
+B:Processes HTTP Request.
+	B1:Identifies correct controller method
+	    Based on request url
+	B2:Executes Controller method
+		Returns model and view Name
+	B3:Identifies correct view
+		Using ViewResolver
+	B4:Executes view
+C:returns HTTP Response
