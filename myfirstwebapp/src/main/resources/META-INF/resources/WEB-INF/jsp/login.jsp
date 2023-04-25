@@ -8,14 +8,14 @@
 </head>
 <body>
 <h1>Welcome to login page ${name}</h1>
-	<form>
+	<form method="post" >
 		<table>
 			<tr>
 				<td>
 					<span>Name:</span>
 				</td>
 				<td>
-					<input type="text" class="tab1Class" placeholder="Enter UserName"/>
+					<input type="text" name="name" class="tab1Class" placeholder="Enter UserName"/>
 				</td>
 			</tr>
 			<tr>
@@ -23,11 +23,11 @@
 				<span>Password:</span>
 			</td>
 			<td>
-				<input type="password" class="tab1Class" placeholder="Enter your Password"/>
+				<input type="password" name="password" class="tab1Class" placeholder="Enter your Password"/>
 			</td>
 			</tr>
 		</table>
-		<input type="button" value="Login" onClick={}/>
+		<input type="submit" value="Login" onclick={}/>
 	</form>
 </body>
 </html>
