@@ -20,7 +20,7 @@ public class TodoService {
 		
 	}
 	
-	public List<Todo> findByUsername(String username){
+	public List<Todo> findByUsername(){
 		return todos;
 	}
 }
