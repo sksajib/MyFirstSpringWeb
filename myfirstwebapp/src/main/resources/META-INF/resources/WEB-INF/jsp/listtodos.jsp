@@ -4,11 +4,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>welcome page</title>
+<title>List Todos Page</title>
 </head>
 <body>
 	<div>
-		Welcome To ${name}'s World
+		Welcome to Sajib's Todos
 	</div>
+	<div>
+		Your Todos are ${todos}
+	</div>
+
 </body>
 </html>

@@ -8,6 +8,7 @@
 </head>
 <body>
 <h1>Welcome to login page ${name}</h1>
+<pre>${errorMessage}</pre>
 	<form method="post" >
 		<table>
 			<tr>
